@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>javaOpcDaClient</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!--utgard start-->
+
+        <dependency>
+
+            <groupId>org.openscada.external</groupId>
+
+            <artifactId>org.openscada.external.jcifs</artifactId>
+
+            <version>1.2.25</version>
+
+            <exclusions>
+
+                <exclusion>
+
+                    <groupId>org.bouncycastle</groupId>
+
+                    <artifactId>bcprov-jdk15on</artifactId>
+
+                </exclusion>
+
+            </exclusions>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.openscada.jinterop</groupId>
+
+            <artifactId>org.openscada.jinterop.core</artifactId>
+
+            <version>2.1.8</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.openscada.jinterop</groupId>
+
+            <artifactId>org.openscada.jinterop.deps</artifactId>
+
+            <version>1.5.0</version>
+
+            <exclusions>
+
+                <exclusion>
+
+                    <groupId>org.bouncycastle</groupId>
+
+                    <artifactId>bcprov-jdk15on</artifactId>
+
+                </exclusion>
+
+            </exclusions>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.openscada.utgard</groupId>
+
+            <artifactId>org.openscada.opc.dcom</artifactId>
+
+            <version>1.5.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.openscada.utgard</groupId>
+
+            <artifactId>org.openscada.opc.lib</artifactId>
+
+            <version>1.5.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.bouncycastle</groupId>
+
+            <artifactId>bcprov-jdk15on</artifactId>
+
+            <version>1.61</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!--utgard end-->
+    </dependencies>
+</project>
