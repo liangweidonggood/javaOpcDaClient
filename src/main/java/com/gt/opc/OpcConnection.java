@@ -27,11 +27,11 @@ public class OpcConnection {
 
         CI.setHost("127.0.0.1");
 
-        CI.setUser("OPCUser");
+        CI.setUser("opc");
 
-        CI.setPassword("111111");
+        CI.setPassword("123456");
 
-        CI.setClsid("7BC0CC8E-482C-47CA-ABDC-0FE7F9C6E729");
+        CI.setClsid("13486D44-4821-11D2-A494-3CB306C10000");
 
     }
 
@@ -42,7 +42,7 @@ public class OpcConnection {
     }
     //读取多个值方法的使用：
 
-    private static final List<String> ITEMS = Arrays.asList("通道 1.设备 1.TAG1", "通道 1.设备 1.TAG2");
+    private static final List<String> ITEMS = Arrays.asList("numeric.sin.int16", "通道 1.设备 1.TAG2");
 
     private final Server server = new Server(OpcConnection.getInfo(), Executors.newSingleThreadScheduledExecutor());
 

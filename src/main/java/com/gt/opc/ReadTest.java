@@ -20,17 +20,22 @@ public class ReadTest {
 
         ci.setHost("127.0.0.1");
 
-        ci.setUser("OPCUser");
+        ci.setUser("opc");
 
-        ci.setPassword("111111");
+        ci.setPassword("123");
 
-        ci.setClsid("7BC0CC8E-482C-47CA-ABDC-0FE7F9C6E729");
+        //ci.setClsid("7BC0CC8E-482C-47CA-ABDC-0FE7F9C6E729");
+        //ci.setClsid("13486D44-4821-11D2-A494-3CB306C10000");
 
-        //ci.setProgId("");
+        //ci.setProgId("Matrikon.OPC.Simulation.1");
+        ci.setProgId("Kepware.KEPServerEX.V6");
 
         //要读取的标记
 
-        String item = "通道 1.设备 1.TAG1";
+        //String item = "通道 1.设备 1.TAG1";
+        String item = "模拟器示例.d1.t1";
+        //String item = "numeric.sin.int16";
+        //String item = "Random.Int1";
 
         //连接对象
 
